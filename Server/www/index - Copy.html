@@ -1,0 +1,123 @@
+<html>
+<head> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/Chart.min.js"></script>
+    <script src="js/chart_class.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/Chart.js"></script>
+    <link rel="stylesheet" href="css/Chart.min.css">
+    <link rel="stylesheet" href="css/Chart.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SecurOS - Dashboards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+
+
+
+<div class=" container-fluid pt-4  text-white">
+  <div class="row ">
+    <!-- PRIMER CUADRO -->
+    <div class="col-sm-8 "> 
+      <div class="overlay" id='overlay'> </div>
+      <div class="row">
+        <!-- PRIMERA GRAFICA -->
+        <div class="col-sm-12">
+          <div class="box box-primary">
+            <div class="box-body">
+              <div class="chart">
+                <canvas id="canvas" style="width:80%"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PRIMER PIE -->
+        <div class="col-sm-4">
+          <div class="box box-primary">
+            <div class="box-body">
+              <div class="chart">
+                <canvas id="pieChart" ></canvas>
+                   <div class="textChart" id="pie1">
+                    53<sup style="font-size: 20px">%</sup>
+                   </div>
+               </div>
+            </div>
+          </div>  
+        </div>
+         <!-- SEGUNDO PIE -->
+        <div class="col-sm-4">
+          <div class="box box-primary">
+            <div class="box-body">
+              <div class="chart">
+                <canvas id="pieChart2" ></canvas>
+                 <div class="textChart" id="pie2">
+                    20<sup style="font-size: 20px">%</sup>
+                   </div>
+               </div>
+            </div>
+          </div>  
+        </div>
+        <!-- TERCER PIE -->
+        <div class="col-sm-4">
+          <div class="box box-primary">
+            <div class="box-body">
+              <div class="chart">
+                <canvas id="pieChart3" ></canvas>
+                 <div class="textChart" id="pie3">
+                    100<sup style="font-size: 20px">%</sup>
+                   </div>
+               </div>
+            </div>
+          </div>  
+        </div>
+      </div>  
+    </div>
+    <div class="col-sm-4" > 
+
+
+        <div class="card bg-danger">
+          <div class="card-body d-flex bg-danger align-items-end flex-column text-right">
+            <div class='card-title'>32</div>
+            <p class="w-75">CRITICO</p>
+            <i class="fal fa-pencil-ruler"></i>
+          </div>
+        </div>
+  
+        <div class="card bg-warning">
+          <div class="card-body d-flex bg-warning align-items-end flex-column text-right">
+            <div class='card-title'>54</div>
+            <p class="w-75">MODERADO</p>
+            <i class="fal fa-pencil-ruler"></i>
+          </div>
+        </div>
+        <div class="card bg-success">
+          <div class="card-body d-flex bg-success align-items-end flex-column text-right">
+            <div class='card-title'>35</div>
+            <p class="w-75">BAJO</p>
+            <i class="fal fa-pencil-ruler"></i>
+          </div>
+        </div>
+        
+
+
+</div>
+    </div>
+    <div >
+  <img  class="logo" src="images/logos-ISS Letras Blancas.png">  
+</div>
+  </div>
+</div>
+
+  
+<script src="js/chart-module.js"></script>
+</body>
+
+</html>
